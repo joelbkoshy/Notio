@@ -1,0 +1,65 @@
+.sidebar {
+    height: 100%;
+    background-color: #0a0f17;
+    width: 5%;
+    position: fixed; /* Add this line to fix the position */
+    top: 0; /* Add this line to position it at the top */
+    left: 0; /* Add this line to position it on the left */
+    z-index: 1000; /* Add a z-index to ensure it's on top of other content */
+    overflow-y: auto; /* Add this to enable scrolling within the sidebar */
+  }
+
+  .cursor{
+    cursor:progress
+  }
+  .content-container {
+    /* position: fixed; */
+    /* top: 0;
+    left: 0;
+    /* Adjust the width as needed */
+    /* width: 60vh;   */
+    overflow:hidden;
+    width: 100%;
+    /* Add any other styling properties you want */
+  }
+
+  .image-container{
+    width: 35rem; /* Set the fixed width of the container */
+    height: 50rem; /* Set the fixed height of the container */
+    overflow: hidden;
+    /* width: 10; */
+  }
+
+.image{
+    width: 100%; /* The image will scale to 100% of the container's width */
+    height: 100%; /* Maintain the aspect ratio of the image */
+    display: block; 
+}
+.sidebar-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sidebar-logos{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items:  center;
+}
+
+.sidebar-h3{
+    justify-content: center;
+    display:flex; 
+    justify-items: center;
+}
+
+p{
+    color: aliceblue;
+}
+
+h3{
+
+    color: aliceblue;
+}

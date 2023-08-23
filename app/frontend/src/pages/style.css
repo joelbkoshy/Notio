@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Fira+Sans&family=Poppins:wght@400;600&family=Source+Code+Pro:wght@300&display=swap');
+
+body {
+  font-family: "Poppins";
+  margin: 0;
+  /* Remove default body margin */
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    /* font-size: larger */
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+}
+
+.image-switcher-container {
+  position: relative;
+  height: 100vh;
+  display: inline-block;
+}
+
+.image-switcher-container h1 {
+  position: absolute;
+  top: 20px;
+  /* Adjust this value to position vertically */
+  left: 20px;
+  /* Adjust this value to position horizontally */
+  margin: 0;
+  padding: 5px;
+  color: white;
+}
+
+.home-main {
+  display: flex;
+  /* flex-direction: row; */
+  float: right;
+  width: 100%;
+  height: max-content;
+  align-items: center;
+  background: linear-gradient(-45deg, #ffffff, #514c4c88);
+
+}
+
+.TypeWriter{
+  margin: 10rem;
+  /* width: 6rem;
+  height: 3rem; */
+  /* position: absolute; */
+}
+
+.get-started{
+  cursor: pointer;
+  width: 10rem;
+  height:4rem;
+  position: fixed;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  bottom: 20px; /* Adjust the distance from the bottom as needed */
+  right: 20px;
+  background-color: black; /* Set button background color to black */
+  color: #e1e0e0;
+  border-radius: 30px;
+}
+
+.home-main-content {
+  align-items: flex-start;
+background: transparent;
+}
+
+.image-switcher-container {
+  /* margin: 10%; */
+  background-color: aqua;
+  height: 100%;
+  /* Take up full height */
+  /* overflow: hidden; */
+  /* Hide any overflow content */
+}
+
+  .content {
+    flex: 1;
+    /* Take up remaining width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    /* Add padding to center content */
+    /* overflow: auto; */
+    position: relative;
+    /* Add scrollable content if needed */
+  }
+
+.header {
+  margin-bottom: 20px;
+}
+
+.input-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.youtube-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+  width: 300px;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  background-color: #0968cd;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.result-section {
+  margin-top: 20px;
+}
+
+.table {
+  margin-left: 10vh;
+  width: 50rem;
+  height: fit-content;
+}
