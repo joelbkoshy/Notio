@@ -12,7 +12,7 @@ function Type() {
         ],
         autoStart: true,
         loop: true,
-        deleteSpeed: 100,
+        deleteSpeed: 50,
         html: true,
         cursorClassName:"cursor"
       }}

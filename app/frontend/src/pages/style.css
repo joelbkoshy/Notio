@@ -70,7 +70,6 @@ background: transparent;
 
 .image-switcher-container {
   /* margin: 10%; */
-  background-color: aqua;
   height: 100%;
   /* Take up full height */
   /* overflow: hidden; */
@@ -125,4 +124,26 @@ background: transparent;
   margin-left: 10vh;
   width: 50rem;
   height: fit-content;
+}
+
+
+.analysis-mainContainer{
+  width: 100%;
+  height: 100%;
+  background-color: #cfcece;
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+}
+
+h3{
+  color: fffdfd;
+}
+.analysis-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 95vw;
+  /* height: 100vh; */
 }

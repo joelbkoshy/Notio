@@ -33,7 +33,7 @@ const ImageSwitcher = () => {
 
   return (
     <div className='image-container'>
-      <img src={currentImage} alt=""  className='image'/>
+      <img src={currentImage} alt=""  className='image' loading='lazy'/>
     </div>
   );
 };

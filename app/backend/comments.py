@@ -44,12 +44,25 @@ def start_scraping():
             print("link: ", data)
             if data.startswith("https://www.youtube.com/"):
                 scraped_comments = comments(data)
+                sentiment_counts = {
+                    'Very Negative': 0,
+                    'Negative': 0,
+                    'Neutral': 0,
+                    'Positive': 0,
+                    'Very Positive': 0,
+                }
                 analyzed_comments=[]
                 for comment in scraped_comments:
                     comment["sentiment"]=analyze_comment(comment["text"])
+                    sentiment_counts[comment["sentiment"]] += 1
                     analyzed_comments.append(comment)
                 # print(analyzed_comments)
-                return jsonify(comments=analyzed_comments)
+                response_data = {
+                    'comments': analyzed_comments,
+                    'sentimentCounts': sentiment_counts
+                }
+                # return jsonify(comments=analyzed_comments)
+                return jsonify(response_data)
             else:
                 return jsonify(error="Invalid YouTube URL")
         except Exception as e:
