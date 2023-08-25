@@ -24,7 +24,7 @@ const ImageSwitcher = () => {
       const newIndex = (imageIndex + 1) % images.length;
       setImageIndex(newIndex);
       setCurrentImage(images[newIndex]);
-    }, 100);
+    }, 700);
 
     return () => {
       clearInterval(interval);

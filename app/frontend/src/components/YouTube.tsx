@@ -3,6 +3,7 @@ import axios from 'axios';
 import CircularProgress from '@mui/material/CircularProgress';
 import { DataGrid } from '@mui/x-data-grid';
 import BarChart from './BarChart';
+import { style } from 'd3';
 
 
 type dp = {
@@ -116,21 +117,21 @@ const YouTube = () => {
       <div className='youtube-input'>
         <h3>Analyze youtube videos</h3>
         <div className='youtube-input-main'>
-          <input type="text" onChange={(e) => handleSetLink(e)} />
+          <input type="text" onChange={(e) => handleSetLink(e)} className='mainInput' placeholder='Enter youtube video link..'/>
           <button onClick={() => {
             handleSubmit();
             setSubmit(true)
-          }}>Analyze</button>
+          }} className='black-btn'>Analyze</button>
         </div>
       </div>
       <div>
         <div className='result-section'>
           {loading ? (
-            <CircularProgress />
+            <CircularProgress style={{color:"black"}} />
           ) : data && data.length ? (
             <>
               < div style={{ height: 400, width: '100%', alignItems: "center", display: 'flex', justifyItems: 'center' }}>
-                <DataGrid rows={rows} columns={columns} />
+                <DataGrid rows={rows} columns={columns} style={{backgroundColor:"#828181",fontFamily:"Poppins"}}/>
               </div>
             </>
           ) : null
